@@ -25,7 +25,7 @@ const Blog = () => {
             </div>
 
 
-        <div className="blog grid grid-cols-3 gap-3">
+        <div className="blog grid lg:grid-cols-3 gap-3 sm:grid-cols-1">
             {posts.map((post:PostType) => {
                 return <Post slug={post.slug} key={post.id} id={post.id} title={post.title} content={post.content}  />
             })
