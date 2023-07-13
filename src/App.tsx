@@ -5,27 +5,25 @@ import Home from './components/Home';
 import Blog from './components/Blog';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-import {useTheme} from "@mui/material";
-import {useTranslation} from "react-i18next";
+
 import SinglePost from "./components/SinglePost.tsx";
 /*import {useEffect} from "react";
 import {useAppSelector} from "./hooks.ts";*/
-import {LanguageProvider} from "./LanguageContext.tsx";
+import {LanguageContext, LanguageProvider} from "./LanguageContext.tsx";
+import {useContext, useEffect} from "react";
 
 function App() {
-    const theme = useTheme();
-    const {i18n} = useTranslation();
+    const { currentLanguage } = useContext(LanguageContext);
     /*
         const lang = useAppSelector((state) => state.blog.language);
     */
-    /*  console.log(lang)
-      let dir1 = lang?.language === "en" ? "ltr" : "rtl";
-      document.body.dir = dir1;
-      theme.direction = i18n.dir();
+     console.log(currentLanguage)
+      const dir1 = currentLanguage === "en" ? "ltr" : "rtl";
+
+
      useEffect(() => {
-          const dir = dir1;
-          document.body.dir = dir;
-      }, [i18n, i18n.language,dir1]);*/
+         document.body.dir = dir1;
+      }, [currentLanguage,dir1]);
     return (
         <LanguageProvider>
             <Router>

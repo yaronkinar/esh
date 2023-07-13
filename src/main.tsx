@@ -8,6 +8,7 @@ import {I18nextProvider} from 'react-i18next';
 import i18n from "./i18n.ts";
 import {store} from "./store.ts";
 import { Provider } from 'react-redux'
+import {LanguageProvider} from "./LanguageContext.tsx";
 
 const theme = createTheme({
     direction: 'ltr'
@@ -17,6 +18,7 @@ const theme = createTheme({
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>
+        <LanguageProvider>
         <I18nextProvider i18n={i18n}>
         <ThemeProvider theme={theme}>
 
@@ -28,5 +30,6 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 
         </ThemeProvider>
         </I18nextProvider>
+            </LanguageProvider>
     </React.StrictMode>,
 )

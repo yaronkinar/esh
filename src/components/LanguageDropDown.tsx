@@ -47,8 +47,8 @@ export default function LanguageDropDown() {
                 onClose={handleClose}
 
             >
-                <MenuItem onClick={() => changeLanguage('en')}>English</MenuItem>
-                <MenuItem onClick={() => changeLanguage('heb')}>עברית</MenuItem>
+                <MenuItem disabled={currentLanguage=="en"} onClick={() => changeLanguage('en')}>English</MenuItem>
+                <MenuItem disabled={currentLanguage=="heb"}  onClick={() => changeLanguage('heb')}>עברית</MenuItem>
             </Menu>
         </div>
     );
