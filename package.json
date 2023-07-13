@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite && npm run mock-api",
-    "build": "tsc && vite build && npm run mock-api",
+    "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "mock-api": "json-server --watch db.json --port 3001"
