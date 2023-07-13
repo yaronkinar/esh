@@ -35,6 +35,25 @@
       "date": "2023-07-13",
       "slug": "post-3-title",
       "language": "heb"
+    },{
+      "id": 6,
+      "title": "A new bank in Israel",
+      "content": "A new bank started operating in Israel. The new bank offers innovative and improved services, and is expected to undermine the local banking marketי.",
+      "tags": ["בנק", "חדש", "ישראל"],
+      "author": "Bard",
+      "date": "2023-07-13",
+      "slug": "post-3-title",
+      "language": "en"
+    },
+
+    {
+      "title": "Introducing NewBank: A Revolutionary Approach to Banking",
+      "id": "123456789",
+      "slug": "introducing-newbank-a-revolutionary-approach-to-banking",
+      "author": "John Doe",
+      "language": "en",
+      "published_date": "2023-07-13",
+      "content": "Are you tired of traditional banking? Look no further! We are thrilled to introduce NewBank, a groundbreaking financial institution that is changing the way people bank.</p><p>Founded on January 15, 2023, in the heart of New York City, NewBank aims to provide innovative and customer-centric banking solutions. Our range of services includes savings accounts, checking accounts, loans, and credit cards.</p><p>With multiple branches conveniently located throughout the city, including our flagship Downtown Branch at 123 Main Street and our Uptown Branch at 456 Park Avenue, we ensure easy access to our services.</p><p>At NewBank, we prioritize your financial well-being. Our team of experienced professionals is dedicated to providing personalized assistance and financial advice tailored to your needs. Whether you're a young professional, a family, or a small business owner, we have the perfect solutions to help you achieve your financial goals.</p><p>Experience the future of banking with NewBank! Visit our website <a href='https://www.newbank.com'>www.newbank.com</a> to learn more about our services and start your banking journey today."
     }
   ]
 }

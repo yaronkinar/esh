@@ -10,20 +10,18 @@ import {LanguageContext} from "../LanguageContext.tsx";
 const Blog = () => {
 
     const posts = useAppSelector((state) => state.blog.blogPosts)
-    const lang = useAppSelector((state) => state.blog.language)
     const dispach = useAppDispatch();
     const {t, i18n} = useTranslation();
     const { currentLanguage } = useContext(LanguageContext);
     console.log("currentLanguage blog",currentLanguage)
    useEffect(() => {
-       console.log("i18n?.language",lang?.language)
        i18n.changeLanguage(currentLanguage)
        dispach(getBlogPostsByLanguage(currentLanguage))
-   }, [dispach,currentLanguage])
+   }, [dispach,currentLanguage,i18n])
     return (
         <div>
             <div className="flex flex-auto">
-                <Link href="/">{t("home Link")}</Link>
+                <Link href="/blog">{t("blog link")}</Link>
             </div>
 
 
